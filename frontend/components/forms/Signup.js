@@ -5,6 +5,7 @@ import { signup, clearErrors } from '../../actions/session_actions';
 import {
 	wordIsBlank,
 	capitalizeFirstLetter,
+	isPasswordMatch,
 } from '../../helpers/helperFunctions';
 const ERRORS = [
 	"Email can't be blank", // 0 Blank email
@@ -39,32 +40,24 @@ const Signup = ({
 	}, []);
 
 	/******************************
-	 *     isPasswordMatched      *
-	 ******************************/
-
-	const isPasswordMatched = () => {
-		return password === passwordMatch;
-	};
-
-	/******************************
 	 *       checkFormErrors      *
 	 ******************************/
 
 	const checkFormErrors = () => {
 		let errs = [];
+		const passwordNotMatched = !isPasswordMatch({ password, passwordMatch });
 		if (
 			wordIsBlank(email) ||
 			wordIsBlank(firstName) ||
 			wordIsBlank(lastName) ||
 			wordIsBlank(password) ||
-			!isPasswordMatched()
+			passwordNotMatched
 		) {
 			if (wordIsBlank(email)) errs.push(ERRORS[0]); // 0 Blank email
 			if (wordIsBlank(firstName)) errs.push(ERRORS[3]); // 3 First name blank
 			if (wordIsBlank(lastName)) errs.push(ERRORS[4]); // 4 Last name blank
 			if (password.length < 6) errs.push(ERRORS[5]); // 5 PW too short
-			if (!isPasswordMatched() && !errs.includes(ERRORS[5]))
-				errs.push(ERRORS[6]); // 6 PW !match
+			if (passwordNotMatched && !errs.includes(ERRORS[5])) errs.push(ERRORS[6]); // 6 PW !match
 		}
 		return errs;
 	};

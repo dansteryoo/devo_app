@@ -5,6 +5,7 @@ import {
 	deleteUser,
 	clearErrors,
 } from '../../actions/session_actions';
+import { wordIsBlank, isPasswordMatch } from '../../helpers/helperFunctions';
 import { closeModal } from '../../actions/modal_actions';
 
 /******************************
@@ -52,27 +53,25 @@ const Profile = ({
 		});
 	}, []);
 
-	const isBlank = (word) => word.trim().length < 1;
-	const isPasswordMatch = () => user.password === user.passwordMatch;
-
 	/***********************************
 	 *           handleErrors          *
 	 ***********************************/
 
 	const handleErrors = () => {
-		const { password, firstName, lastName } = user;
+		const { password, passwordMatch, firstName, lastName } = user;
+		const passwordNotMatched = !isPasswordMatch({ password, passwordMatch });
 		clearErrors();
 
 		let errs = [];
 
-		if (isBlank(firstName) || isBlank(lastName)) {
-			if (isBlank(firstName)) errs.push(ERRORS[3]); // 3 First name blank
-			if (isBlank(lastName)) errs.push(ERRORS[4]); // 4 Last name blank
+		if (wordIsBlank(firstName) || wordIsBlank(lastName)) {
+			if (wordIsBlank(firstName)) errs.push(ERRORS[3]); // 3 First name blank
+			if (wordIsBlank(lastName)) errs.push(ERRORS[4]); // 4 Last name blank
 		}
 
-		if (!isBlank(password) || !isPasswordMatch()) {
+		if (!wordIsBlank(password) || passwordNotMatched) {
 			if (password.length < 6) errs.push(ERRORS[5]); // 5 PW too short
-			if (!isPasswordMatch() && !errs.includes(ERRORS[5])) errs.push(ERRORS[6]); // 6 PW !match
+			if (passwordNotMatched && !errs.includes(ERRORS[5])) errs.push(ERRORS[6]); // 6 PW !match
 		}
 
 		return errs;
@@ -102,7 +101,7 @@ const Profile = ({
 		};
 
 		if (errors.length < 1) {
-			if (!isBlank(user.password) && isPasswordMatch()) {
+			if (!wordIsBlank(user.password) && isPasswordMatch(user)) {
 				userUpdate.password = user.password;
 				return processUpdate(userUpdate);
 			} else {
@@ -175,8 +174,8 @@ const Profile = ({
 			if (ERRORS.indexOf(err) === 6) errsHash.pwNoMatch = err;
 		});
 
-		if (!isBlank(firstName)) errsHash.firstName = '';
-		if (!isBlank(lastName)) errsHash.lastName = '';
+		if (!wordIsBlank(firstName)) errsHash.firstName = '';
+		if (!wordIsBlank(lastName)) errsHash.lastName = '';
 		if (password.length > 5) errsHash.pwShort = '';
 		if (password === passwordMatch) errsHash.pwNoMatch = '';
 

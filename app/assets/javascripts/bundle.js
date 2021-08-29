@@ -1193,21 +1193,17 @@ var Signup = function Signup(_ref) {
     };
   }, []);
   /******************************
-   *     isPasswordMatched      *
-   ******************************/
-
-  var isPasswordMatched = function isPasswordMatched() {
-    return password === passwordMatch;
-  };
-  /******************************
    *       checkFormErrors      *
    ******************************/
 
-
   var checkFormErrors = function checkFormErrors() {
     var errs = [];
+    var passwordNotMatched = !Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["isPasswordMatch"])({
+      password: password,
+      passwordMatch: passwordMatch
+    });
 
-    if (Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(email) || Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(firstName) || Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(lastName) || Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(password) || !isPasswordMatched()) {
+    if (Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(email) || Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(firstName) || Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(lastName) || Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(password) || passwordNotMatched) {
       if (Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(email)) errs.push(ERRORS[0]); // 0 Blank email
 
       if (Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_4__["wordIsBlank"])(firstName)) errs.push(ERRORS[3]); // 3 First name blank
@@ -1216,7 +1212,7 @@ var Signup = function Signup(_ref) {
 
       if (password.length < 6) errs.push(ERRORS[5]); // 5 PW too short
 
-      if (!isPasswordMatched() && !errs.includes(ERRORS[5])) errs.push(ERRORS[6]); // 6 PW !match
+      if (passwordNotMatched && !errs.includes(ERRORS[5])) errs.push(ERRORS[6]); // 6 PW !match
     }
 
     return errs;
@@ -3377,7 +3373,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/session_actions */ "./frontend/actions/session_actions.js");
-/* harmony import */ var _actions_modal_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../actions/modal_actions */ "./frontend/actions/modal_actions.js");
+/* harmony import */ var _helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../helpers/helperFunctions */ "./frontend/helpers/helperFunctions.js");
+/* harmony import */ var _actions_modal_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../actions/modal_actions */ "./frontend/actions/modal_actions.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -3395,6 +3392,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -3460,36 +3458,32 @@ var Profile = function Profile(_ref) {
       lastName: currentUser.last_name
     }));
   }, []);
-
-  var isBlank = function isBlank(word) {
-    return word.trim().length < 1;
-  };
-
-  var isPasswordMatch = function isPasswordMatch() {
-    return user.password === user.passwordMatch;
-  };
   /***********************************
    *           handleErrors          *
    ***********************************/
 
-
   var handleErrors = function handleErrors() {
     var password = user.password,
+        passwordMatch = user.passwordMatch,
         firstName = user.firstName,
         lastName = user.lastName;
+    var passwordNotMatched = !Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["isPasswordMatch"])({
+      password: password,
+      passwordMatch: passwordMatch
+    });
     clearErrors();
     var errs = [];
 
-    if (isBlank(firstName) || isBlank(lastName)) {
-      if (isBlank(firstName)) errs.push(ERRORS[3]); // 3 First name blank
+    if (Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(firstName) || Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(lastName)) {
+      if (Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(firstName)) errs.push(ERRORS[3]); // 3 First name blank
 
-      if (isBlank(lastName)) errs.push(ERRORS[4]); // 4 Last name blank
+      if (Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(lastName)) errs.push(ERRORS[4]); // 4 Last name blank
     }
 
-    if (!isBlank(password) || !isPasswordMatch()) {
+    if (!Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(password) || passwordNotMatched) {
       if (password.length < 6) errs.push(ERRORS[5]); // 5 PW too short
 
-      if (!isPasswordMatch() && !errs.includes(ERRORS[5])) errs.push(ERRORS[6]); // 6 PW !match
+      if (passwordNotMatched && !errs.includes(ERRORS[5])) errs.push(ERRORS[6]); // 6 PW !match
     }
 
     return errs;
@@ -3521,7 +3515,7 @@ var Profile = function Profile(_ref) {
     };
 
     if (errors.length < 1) {
-      if (!isBlank(user.password) && isPasswordMatch()) {
+      if (!Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(user.password) && Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["isPasswordMatch"])(user)) {
         userUpdate.password = user.password;
         return processUpdate(userUpdate);
       } else {
@@ -3594,8 +3588,8 @@ var Profile = function Profile(_ref) {
       if (ERRORS.indexOf(err) === 5) errsHash.pwShort = err;
       if (ERRORS.indexOf(err) === 6) errsHash.pwNoMatch = err;
     });
-    if (!isBlank(firstName)) errsHash.firstName = '';
-    if (!isBlank(lastName)) errsHash.lastName = '';
+    if (!Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(firstName)) errsHash.firstName = '';
+    if (!Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_3__["wordIsBlank"])(lastName)) errsHash.lastName = '';
     if (password.length > 5) errsHash.pwShort = '';
     if (password === passwordMatch) errsHash.pwNoMatch = '';
     return errsHash;
@@ -3765,7 +3759,7 @@ var mapDispatch = function mapDispatch(dispatch) {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["deleteUser"])(userId));
     },
     closeModal: function closeModal() {
-      return dispatch(Object(_actions_modal_actions__WEBPACK_IMPORTED_MODULE_3__["closeModal"])());
+      return dispatch(Object(_actions_modal_actions__WEBPACK_IMPORTED_MODULE_4__["closeModal"])());
     },
     clearErrors: function clearErrors() {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["clearErrors"])());
@@ -4054,7 +4048,7 @@ var themeBooks = ['This Is the New Testament', 'This Is the Old Testament', 'The
 /*!*********************************************!*\
   !*** ./frontend/helpers/helperFunctions.js ***!
   \*********************************************/
-/*! exports provided: searchRegexMatch, setPayload, sortTitles, sortAlphabetically, wordIsBlank, capitalizeFirstLetter, sortDevoBook, isValidNumber, isUserBookmarkBlank, dayIsNumber, createTitlePayload, reformatMapToLowercase */
+/*! exports provided: searchRegexMatch, setPayload, sortTitles, sortAlphabetically, wordIsBlank, isPasswordMatch, capitalizeFirstLetter, sortDevoBook, isValidNumber, isUserBookmarkBlank, dayIsNumber, createTitlePayload, reformatMapToLowercase */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4064,6 +4058,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sortTitles", function() { return sortTitles; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sortAlphabetically", function() { return sortAlphabetically; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wordIsBlank", function() { return wordIsBlank; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPasswordMatch", function() { return isPasswordMatch; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "capitalizeFirstLetter", function() { return capitalizeFirstLetter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sortDevoBook", function() { return sortDevoBook; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isValidNumber", function() { return isValidNumber; });
@@ -4114,6 +4109,11 @@ var sortAlphabetically = function sortAlphabetically(data) {
 };
 var wordIsBlank = function wordIsBlank(word) {
   return word.trim().length < 1;
+};
+var isPasswordMatch = function isPasswordMatch(_ref) {
+  var password = _ref.password,
+      passwordMatch = _ref.passwordMatch;
+  return password === passwordMatch;
 };
 var capitalizeFirstLetter = function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.toLocaleLowerCase().slice(1);

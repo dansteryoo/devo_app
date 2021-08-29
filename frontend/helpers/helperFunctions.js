@@ -40,6 +40,10 @@ export const wordIsBlank = (word) => {
 	return word.trim().length < 1;
 };
 
+export const isPasswordMatch = ({ password, passwordMatch }) => {
+	return password === passwordMatch;
+}
+
 export const capitalizeFirstLetter = (string) => {
 	return string.charAt(0).toUpperCase() + string.toLocaleLowerCase().slice(1);
 };
