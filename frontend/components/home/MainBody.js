@@ -3,18 +3,24 @@ import { useMount } from 'ahooks';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { closeModal, openModal } from '../../actions/modal_actions';
-import { fetchDevo } from '../../actions/devo_actions';
+import { fetchDevo, fetchDevoBook } from '../../actions/devo_actions';
 import { clearErrors } from '../../actions/session_actions';
 import {
 	createBookmark,
 	fetchBookmark,
 	deleteBookmark,
 } from '../../actions/bookmark_actions';
-import { sortDevoBook, isNumber } from '../../helpers/helperFunctions';
+import {
+	sortDevoBook,
+	isNumber,
+	setPayload,
+	createTitlePayload,
+} from '../../helpers/helperFunctions';
 import {
 	regBibleTitles,
 	maxMcLeanBooks,
-	allBookTitles,
+	OTbooks, 
+	NTbooks, 
 } from '../../helpers/bookTitles';
 
 const splitPassages = (passages) => {
@@ -27,13 +33,14 @@ const checkForNumber = (data) => {
 };
 
 /******************************
- *    MainBody Component    *
+ *     MainBody Component     *
  ******************************/
 
 const MainBody = ({
 	mainBodyDevo,
 	currentUser,
 	fetchDevo,
+	fetchDevoBook,
 	bookmark,
 	createBookmark,
 	deleteBookmark,
@@ -54,7 +61,7 @@ const MainBody = ({
 	const [mainBodyChanged, setMainBodyChanged] = useState(false);
 
 	/******************************
-	 *    useMount    *
+	 *          useMount          *
 	 ******************************/
 
 	useMount(() => {
@@ -75,7 +82,7 @@ const MainBody = ({
 	});
 
 	/******************************
-	 *      useEffect       *
+	 *         useEffect          *
 	 ******************************/
 
 	useEffect(() => {
@@ -190,17 +197,16 @@ const MainBody = ({
 	 ******************************/
 
 	const findMainBodyIndex = () => {
-		const currentIndex = devoBook.findIndex(
-			(devo) => devo.id === mainBodyDevo.id
-		);
+		const currentMainBodyDevoIndex =
+			mainBodyDevo && devoBook.findIndex((devo) => devo.id === mainBodyDevo.id);
 		return {
-			currentIndex,
-			currentDay: currentIndex + 1,
+			currentMainBodyDevoIndex,
+			currentDay: currentMainBodyDevoIndex + 1,
 		};
 	};
 
 	/******************************
-	 *    handleLocalStorage    *
+	 *     handleLocalStorage     *
 	 ******************************/
 
 	const handleLocalStorage = (type) => {
@@ -238,7 +244,7 @@ const MainBody = ({
 	};
 
 	/******************************
-	 *    renderPassages    *
+	 *       renderPassages       *
 	 ******************************/
 
 	const renderPassages = () => {
@@ -327,30 +333,59 @@ const MainBody = ({
 	};
 
 	/******************************
-	 *    toggleMainBody    *
+	 *       toggleMainBody       *
 	 ******************************/
 
 	const toggleMainBody = (type) => {
-		const { currentIndex } = findMainBodyIndex();
-		// const currentBookIndex = allBookTitles.indexOf(book);
-		// console.log(currentIndex)
+		const { currentMainBodyDevoIndex } = findMainBodyIndex();
+		const allBookTitles = [...OTbooks, ...NTbooks];
+		console.log(book)
+		const currentBookTitleIndex = allBookTitles.indexOf(book);
+		const previousBookTitle =
+			currentBookTitleIndex < 1
+				? allBookTitles[allBookTitles.length - 1]
+				: allBookTitles[currentBookTitleIndex - 1];
+		const nextBookTitle =
+			currentBookTitleIndex > allBookTitles.length
+				? allBookTitles[0]
+				: allBookTitles[currentBookTitleIndex + 1];
+		console.log({
+			devoBook
+		});
+		const title = { gender: gender.toUpperCase() };
+
 		switch (type) {
 			case 'previous':
-				if (currentIndex === 0) {
-					// fetchDevo()
-					// debugger;
-					return;
+				if (currentMainBodyDevoIndex < 1) {
+					const fetchBookPayload = createTitlePayload(allBookTitles, {
+						...title,
+						book: previousBookTitle.toLowerCase(),
+					});
+					const devoPayload = setPayload(fetchBookPayload);
+					console.log({ devoPayload });
+					fetchDevoBook(devoPayload)
 				}
-				return fetchDevo(devoBook[currentIndex - 1].id);
+				return fetchDevo(devoBook[currentMainBodyDevoIndex - 1].id);
 
 			case 'next':
-				if (currentIndex === devoBook.length - 1) return;
-				return fetchDevo(devoBook[currentIndex + 1].id);
+				if (currentMainBodyDevoIndex > devoBook.length) {
+					const fetchBookPayload = createTitlePayload(allBookTitles, {
+						...title,
+						book: nextBookTitle.toLowerCase(),
+					});
+					const devoPayload = setPayload(fetchBookPayload);
+					fetchDevoBook(devoPayload);
+				}
+				return fetchDevo(devoBook[currentMainBodyDevoIndex + 1].id);
 
 			default:
 				return;
 		}
 	};
+
+	/******************************
+	 *       toggleBookmark       *
+	 ******************************/
 
 	const toggleBookmark = () => {
 		if (isBookmarked) {
@@ -367,6 +402,10 @@ const MainBody = ({
 		}
 		setIsBookmarked(!isBookmarked);
 	};
+
+	/******************************
+	 *        toggleAudio         *
+	 ******************************/
 
 	const toggleAudio = () => {
 		const passageSplit = esvPassage[0].passage.split(' ');
@@ -389,6 +428,10 @@ const MainBody = ({
 			return window.open(url, windowName, windowParams);
 		}
 	};
+
+	/******************************
+	 *          render            *
+	 ******************************/
 
 	if (isEmptyMainBody && !handleLocalStorage('getCurrentPage')) {
 		return <></>;
@@ -476,6 +519,7 @@ const mapDispatch = (dispatch) => ({
 	createBookmark: (bookmark) => dispatch(createBookmark(bookmark)),
 	fetchBookmark: () => dispatch(fetchBookmark()),
 	deleteBookmark: (bookmarkId) => dispatch(deleteBookmark(bookmarkId)),
+	fetchDevoBook: (book) => dispatch(fetchDevoBook(book)),
 });
 
 export default connect(mapState, mapDispatch)(MainBody);

@@ -1584,6 +1584,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_bookmark_actions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../actions/bookmark_actions */ "./frontend/actions/bookmark_actions.js");
 /* harmony import */ var _helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../helpers/helperFunctions */ "./frontend/helpers/helperFunctions.js");
 /* harmony import */ var _helpers_bookTitles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../helpers/bookTitles */ "./frontend/helpers/bookTitles.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -1623,7 +1637,7 @@ var checkForNumber = function checkForNumber(data) {
   return data.match(/^([1-9]|[1-8][0-9]|9[0-9]|1[0-4][0-9]|150)$/g);
 };
 /******************************
- *    MainBody Component    *
+ *     MainBody Component     *
  ******************************/
 
 
@@ -1631,6 +1645,7 @@ var MainBody = function MainBody(_ref) {
   var mainBodyDevo = _ref.mainBodyDevo,
       currentUser = _ref.currentUser,
       fetchDevo = _ref.fetchDevo,
+      fetchDevoBook = _ref.fetchDevoBook,
       bookmark = _ref.bookmark,
       createBookmark = _ref.createBookmark,
       deleteBookmark = _ref.deleteBookmark,
@@ -1697,7 +1712,7 @@ var MainBody = function MainBody(_ref) {
       mainBodyChanged = _useState24[0],
       setMainBodyChanged = _useState24[1];
   /******************************
-   *    useMount    *
+   *          useMount          *
    ******************************/
 
 
@@ -1719,7 +1734,7 @@ var MainBody = function MainBody(_ref) {
     }
   });
   /******************************
-   *      useEffect       *
+   *         useEffect          *
    ******************************/
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
@@ -1837,16 +1852,16 @@ var MainBody = function MainBody(_ref) {
 
 
   var findMainBodyIndex = function findMainBodyIndex() {
-    var currentIndex = devoBook.findIndex(function (devo) {
+    var currentMainBodyDevoIndex = mainBodyDevo && devoBook.findIndex(function (devo) {
       return devo.id === mainBodyDevo.id;
     });
     return {
-      currentIndex: currentIndex,
-      currentDay: currentIndex + 1
+      currentMainBodyDevoIndex: currentMainBodyDevoIndex,
+      currentDay: currentMainBodyDevoIndex + 1
     };
   };
   /******************************
-   *    handleLocalStorage    *
+   *     handleLocalStorage     *
    ******************************/
 
 
@@ -1881,7 +1896,7 @@ var MainBody = function MainBody(_ref) {
     }
   };
   /******************************
-   *    renderPassages    *
+   *       renderPassages       *
    ******************************/
 
 
@@ -1946,34 +1961,62 @@ var MainBody = function MainBody(_ref) {
     });
   };
   /******************************
-   *    toggleMainBody    *
+   *       toggleMainBody       *
    ******************************/
 
 
   var toggleMainBody = function toggleMainBody(type) {
     var _findMainBodyIndex2 = findMainBodyIndex(),
-        currentIndex = _findMainBodyIndex2.currentIndex; // const currentBookIndex = allBookTitles.indexOf(book);
-    // console.log(currentIndex)
+        currentMainBodyDevoIndex = _findMainBodyIndex2.currentMainBodyDevoIndex;
 
+    var allBookTitles = [].concat(_toConsumableArray(_helpers_bookTitles__WEBPACK_IMPORTED_MODULE_9__["OTbooks"]), _toConsumableArray(_helpers_bookTitles__WEBPACK_IMPORTED_MODULE_9__["NTbooks"]));
+    console.log(book);
+    var currentBookTitleIndex = allBookTitles.indexOf(book);
+    var previousBookTitle = currentBookTitleIndex < 1 ? allBookTitles[allBookTitles.length - 1] : allBookTitles[currentBookTitleIndex - 1];
+    var nextBookTitle = currentBookTitleIndex > allBookTitles.length ? allBookTitles[0] : allBookTitles[currentBookTitleIndex + 1];
+    console.log({
+      devoBook: devoBook
+    });
+    var title = {
+      gender: gender.toUpperCase()
+    };
 
     switch (type) {
       case 'previous':
-        if (currentIndex === 0) {
-          // fetchDevo()
-          // debugger;
-          return;
+        if (currentMainBodyDevoIndex < 1) {
+          var fetchBookPayload = Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_8__["createTitlePayload"])(allBookTitles, _objectSpread(_objectSpread({}, title), {}, {
+            book: previousBookTitle.toLowerCase()
+          }));
+          var devoPayload = Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_8__["setPayload"])(fetchBookPayload);
+          console.log({
+            devoPayload: devoPayload
+          });
+          fetchDevoBook(devoPayload);
         }
 
-        return fetchDevo(devoBook[currentIndex - 1].id);
+        return fetchDevo(devoBook[currentMainBodyDevoIndex - 1].id);
 
       case 'next':
-        if (currentIndex === devoBook.length - 1) return;
-        return fetchDevo(devoBook[currentIndex + 1].id);
+        if (currentMainBodyDevoIndex > devoBook.length) {
+          var _fetchBookPayload = Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_8__["createTitlePayload"])(allBookTitles, _objectSpread(_objectSpread({}, title), {}, {
+            book: nextBookTitle.toLowerCase()
+          }));
+
+          var _devoPayload = Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_8__["setPayload"])(_fetchBookPayload);
+
+          fetchDevoBook(_devoPayload);
+        }
+
+        return fetchDevo(devoBook[currentMainBodyDevoIndex + 1].id);
 
       default:
         return;
     }
   };
+  /******************************
+   *       toggleBookmark       *
+   ******************************/
+
 
   var toggleBookmark = function toggleBookmark() {
     if (isBookmarked) {
@@ -1991,6 +2034,10 @@ var MainBody = function MainBody(_ref) {
 
     setIsBookmarked(!isBookmarked);
   };
+  /******************************
+   *        toggleAudio         *
+   ******************************/
+
 
   var toggleAudio = function toggleAudio() {
     var passageSplit = esvPassage[0].passage.split(' ');
@@ -2012,6 +2059,10 @@ var MainBody = function MainBody(_ref) {
       return window.open(url, windowName, windowParams);
     }
   };
+  /******************************
+   *          render            *
+   ******************************/
+
 
   if (isEmptyMainBody && !handleLocalStorage('getCurrentPage')) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
@@ -2116,6 +2167,9 @@ var mapDispatch = function mapDispatch(dispatch) {
     },
     deleteBookmark: function deleteBookmark(bookmarkId) {
       return dispatch(Object(_actions_bookmark_actions__WEBPACK_IMPORTED_MODULE_7__["deleteBookmark"])(bookmarkId));
+    },
+    fetchDevoBook: function fetchDevoBook(book) {
+      return dispatch(Object(_actions_devo_actions__WEBPACK_IMPORTED_MODULE_5__["fetchDevoBook"])(book));
     }
   };
 };
@@ -3965,14 +4019,13 @@ var mapDispatch = function mapDispatch(dispatch) {
 /*!****************************************!*\
   !*** ./frontend/helpers/bookTitles.js ***!
   \****************************************/
-/*! exports provided: maxMcLeanBooks, regBibleTitles, allBookTitles, bibleBooksForIndexing, NTbooks, OTbooks, themeBooks */
+/*! exports provided: maxMcLeanBooks, regBibleTitles, bibleBooksForIndexing, NTbooks, OTbooks, themeBooks */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "maxMcLeanBooks", function() { return maxMcLeanBooks; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "regBibleTitles", function() { return regBibleTitles; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allBookTitles", function() { return allBookTitles; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bibleBooksForIndexing", function() { return bibleBooksForIndexing; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NTbooks", function() { return NTbooks; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OTbooks", function() { return OTbooks; });
@@ -4047,9 +4100,7 @@ chapterDict['Rev'] = 22;
 */
 // main_body audio links
 var maxMcLeanBooks = ['Gen', 'Exod', 'Lev', 'Num', 'Deut', 'Josh', 'Judg', 'Ruth', '1Sam', '2Sam', '1Kgs', '2Kgs', '1Chr', '2Chr', 'Ezra', 'Neh', 'Esth', 'Job', 'Ps', 'Prov', 'Eccl', 'Song', 'Isa', 'Jer', 'Lam', 'Ezek', 'Dan', 'Hos', 'Joel', 'Amos', 'Obad', 'Jonah', 'Mic', 'Nah', 'Hab', 'Zeph', 'Hag', 'Zech', 'Mal', 'Matt', 'Mark', 'Luke', 'John', 'Acts', 'Rom', '1Cor', '2Cor', 'Gal', 'Eph', 'Phil', 'Col', '1Thess', '2Thess', '1Tim', '2Tim', 'Titus', 'Phlm', 'Heb', 'Jas', '1Pet', '2Pet', '1John', '2John', '3John', 'Jude', 'Rev'];
-var regBibleTitles = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', '1 Samuel', '2 Samuel', '1 Kings', '2 Kings', '1 Chronicles', '2 Chronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalm', 'Proverbs', 'Ecclesiastes', 'Song of Songs', 'Isaiah', 'Jeremiah', 'Lamentations', 'Ezekiel', 'Daniel', 'Hosea', 'Joel', 'Amos', 'Obadiah', 'Jonah', 'Micah', 'Nahum', 'Habakkuk', 'Zephaniah', 'Haggai', 'Zechariah', 'Malachi', 'Matthew', 'Mark', 'Luke', 'John', 'Acts', 'Romans', '1 Corinthians', '1 Corinthians', 'Galatians', 'Ephesians', 'Philippians', 'Colossians', '1 Thessalonians', '2 Thessalonians', '1 Timothy', '2 Timothy', 'Titus', 'Philemon', 'Hebrews', 'James', '1 Peter', '2 Peter', '1 John', '2 John', '3 John', 'Jude', 'Revelation']; // sidenav.jsx
-
-var allBookTitles = [].concat(OTbooks, NTbooks, themeBooks); // categories.jsx
+var regBibleTitles = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', '1 Samuel', '2 Samuel', '1 Kings', '2 Kings', '1 Chronicles', '2 Chronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalm', 'Proverbs', 'Ecclesiastes', 'Song of Songs', 'Isaiah', 'Jeremiah', 'Lamentations', 'Ezekiel', 'Daniel', 'Hosea', 'Joel', 'Amos', 'Obadiah', 'Jonah', 'Micah', 'Nahum', 'Habakkuk', 'Zephaniah', 'Haggai', 'Zechariah', 'Malachi', 'Matthew', 'Mark', 'Luke', 'John', 'Acts', 'Romans', '1 Corinthians', '1 Corinthians', 'Galatians', 'Ephesians', 'Philippians', 'Colossians', '1 Thessalonians', '2 Thessalonians', '1 Timothy', '2 Timothy', 'Titus', 'Philemon', 'Hebrews', 'James', '1 Peter', '2 Peter', '1 John', '2 John', '3 John', 'Jude', 'Revelation']; // categories.jsx
 
 var bibleBooksForIndexing = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', '1 & 2 Samuel', 'SecondSamuel', '1 & 2 Kings', 'SecondKings', '1 & 2 Chronicles', 'SecondChronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalm', 'Proverbs', 'Ecclesiastes', 'Song of Songs', 'Isaiah', 'Jeremiah', 'Lamentations', 'Ezekiel', 'Daniel', 'Hosea', 'Joel, Amos, Obadiah, Jonah, & Micah', 'Amos', 'Obadiah', 'Jonah', 'Micah', 'Nahum, Habakkuk, Zephaniah, & Haggai', 'Habakkuk', 'Zephaniah', 'Haggai', 'Zechariah & Malachi', 'Malachi', 'Matthew', 'Mark', 'Luke', 'John', 'Acts of the Apostles', 'Romans', '1 & 2 Corinthians', 'SecondCorinthians', 'Galatians', 'Ephesians', 'Philippians', 'Colossians', '1 & 2 Thessalonians', 'SecondThessalonians', '1 & 2 Timothy and Titus', 'SecondTimothy', 'Titus', 'Philemon', 'Philemon & Hebrews', 'James', '1 & 2 Peter', 'SecondPeter', '1, 2, 3 John', 'SecondJohn', 'ThirdJohn', 'Jude & Revelation']; // category_list_NT.jsx
 
@@ -4175,12 +4226,12 @@ var dayIsNumber = function dayIsNumber(day) {
 
   return true;
 };
-var createTitlePayload = function createTitlePayload(arrayOfBooks, titleObject) {
-  if (!Array.isArray(arrayOfBooks) || arrayOfBooks.length < 1) return arrayOfBooks;
-  var lowercaseArray = arrayOfBooks.map(function (ele) {
+var createTitlePayload = function createTitlePayload(arrayOfBookTitles, titleObject) {
+  if (!Array.isArray(arrayOfBookTitles) || arrayOfBookTitles.length < 1) return arrayOfBookTitles;
+  var lowercaseArray = arrayOfBookTitles.map(function (ele) {
     return ele.toLowerCase();
   });
-  var bookTitle = arrayOfBooks[lowercaseArray.indexOf(titleObject.book)];
+  var bookTitle = arrayOfBookTitles[lowercaseArray.indexOf(titleObject.book)];
   return {
     gender: titleObject.gender,
     book: bookTitle
