@@ -1,772 +1,1180 @@
 [
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 1:1-22, Exodus 2:1-25, Exodus 3:1-22",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 4:1-31, Exodus 5:1-23, Exodus 6:1-30",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 7:1-25, Exodus 8:1-32, Exodus 9:1-35",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 10:1-29, Exodus 11:1-10, Exodus 12:1-22",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 13:1-25, Exodus 14:1-31, Exodus 15:1-27",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 16:1-36, Exodus 17:1-16, Exodus 18:1-27",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 19:1-25, Exodus 20:1-26, Exodus 21:1-36",
-        "devo_title": "Chapters 19-21",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 22:1-31, Exodus 23:1-33, Exodus 24:1-18",
-        "devo_title": "Chapters 22-24",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 25:1-40, Exodus 26:1-37, Exodus 27:1-21",
-        "devo_title": "Chapters 25-27",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 28:1-43, Exodus 29:1-46, Exodus 30:1-38",
-        "devo_title": "Chapters 28-30",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 31:1-18, Exodus 32:1-35, Exodus 33:1-23",
-        "devo_title": "Chapters 31-33",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 34:1-35, Exodus 35:1-35, Exodus 36:1-38",
-        "devo_title": "Chapters 34-36",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Exodus",
-        "devo_passages": "Exodus 37:1-29, Exodus 38:1-31, Exodus 39:1-43, Exodus 40:1-38",
-        "devo_title": "Chapters 37-40",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 1:1-17, Leviticus 2:1-16, Leviticus 3:1-17",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 4:1-35, Leviticus 5:1-26, Leviticus 6:1-30",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 7:1-38, Leviticus 8:1-36, Leviticus 9:1-24",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 10:1-20, Leviticus 11:1-47, Leviticus 12:1-8",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 13:1-59, Leviticus 14:1-57, Leviticus 15:1-33",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 16:1-34, Leviticus 17:1-16, Leviticus 18:1-30",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 19:1-37, Leviticus 20:1-27, Leviticus 21:1-24",
-        "devo_title": "Chapters 19-21",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 22:1-33, Leviticus 23:1-44, Leviticus 24:1-23",
-        "devo_title": "Chapters 22-24",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Leviticus",
-        "devo_passages": "Leviticus 25:1-55, Leviticus 26:1-46, Leviticus 27:1-34",
-        "devo_title": "Chapters 25-27",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 1:1-54, Numbers 2:1-34, Numbers 3:1-51",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 4:1-49, Numbers 5:1-31, Numbers 6:1-27",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 7:1-89, Numbers 8:1-31, Numbers 9:1-23",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 10:1-36, Numbers 11:1-35, Numbers 12:1-16",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 13:1-33, Numbers 14:1-45, Numbers 15:1-41",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 16:1-35, Numbers 17:1-28, Numbers 18:1-32",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 19:1-22, Numbers 20:1-29, Numbers 21:1-35",
-        "devo_title": "Chapters 19-21",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 22:1-41, Numbers 23:1-30, Numbers 24:1-25",
-        "devo_title": "Chapters 22-24",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 25:1-18, Numbers 26:1-65, Numbers 27:1-23",
-        "devo_title": "Chapters 25-27",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 28:1-31, Numbers 29:1-39, Numbers 30:1-17",
-        "devo_title": "Chapters 28-30",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 31:1-54, Numbers 32:1-42, Numbers 33:1-56",
-        "devo_title": "Chapters 31-33",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Numbers",
-        "devo_passages": "Numbers 34:1-29, Numbers 35:1-34, Numbers 36:1-13",
-        "devo_title": "Chapters 34-36",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 1:1-46, Deuteronomy 2:1-37, Deuteronomy 3:1-29",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 4:1-49, Deuteronomy 5:1-33, Deuteronomy 6:1-25",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 7:1-26, Deuteronomy 8:1-20, Deuteronomy 9:1-29",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 10:1-22, Deuteronomy 11:1-32, Deuteronomy 12:1-31",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 13:1-19, Deuteronomy 14:1-29, Deuteronomy 15:1-23",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 16:1-22, Deuteronomy 17:1-20, Deuteronomy 18:1-22",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 19:1-21, Deuteronomy 20:1-20, Deuteronomy 21:1-23",
-        "devo_title": "Chapters 19-21",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 22:1-29, Deuteronomy 23:1-26, Deuteronomy 24:1-22",
-        "devo_title": "Chapters 22-24",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 25:1-19, Deuteronomy 26:1-19, Deuteronomy 27:1-26",
-        "devo_title": "Chapters 25-27",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 28:1-69, Deuteronomy 29:1-28, Deuteronomy 30:1-20",
-        "devo_title": "Chapters 28-30",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Deuteronomy",
-        "devo_passages": "Deuteronomy 31:1-30, Deuteronomy 32:1-52, Deuteronomy 33:1-29, Deuteronomy 34:1-12",
-        "devo_title": "Chapters 31-34",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 1:1-54, 1 Chronicles 2:1-55, 1 Chronicles 3:1-24",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 4:1-43, 1 Chronicles 5:1-26, 1 Chronicles 6:1-81",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 7:1-40, 1 Chronicles 8:1-40, 1 Chronicles 9:1-44",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 10:1-14, 1 Chronicles 11:1-47, 1 Chronicles 12:1-40",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 13:1-14, 1 Chronicles 14:1-17, 1 Chronicles 15:1-29",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 16:1-43, 1 Chronicles 17:1-27, 1 Chronicles 18:1-17",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 19:1-19, 1 Chronicles 20:1-8, 1 Chronicles 21:1-30, 1 Chronicles 22:1-30",
-        "devo_title": "Chapters 19-22",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 23:1-32, 1 Chronicles 24:1-31, 1 Chronicles 25:1-31",
-        "devo_title": "Chapters 23-25",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "1 Chronicles 26:1-32, 1 Chronicles 27:1-34, 1 Chronicles 28:1-21, 1 Chronicles 29:1-30",
-        "devo_title": "Chapters 26-29",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 1:1-17, 2 Chronicles 2:1-18, 2 Chronicles 3:1-17",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 4:1-22, 2 Chronicles 5:1-14, 2 Chronicles 6:1-42",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 7:1-22, 2 Chronicles 8:1-18, 2 Chronicles 9:1-31",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 10:1-19, 2 Chronicles 11:1-23, 2 Chronicles 12:1-16",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 13:1-22, 2 Chronicles 14:1-15, 2 Chronicles 15:1-19",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 16:1-14, 2 Chronicles 17:1-19, 2 Chronicles 18:1-34",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 19:1-11, 2 Chronicles 20:1-37, 2 Chronicles 21:1-20",
-        "devo_title": "Chapters 19-21",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 22:1-12, 2 Chronicles 23:1-21, 2 Chronicles 24:1-27",
-        "devo_title": "Chapters 22-24",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 25:1-28, 2 Chronicles 26:1-23, 2 Chronicles 27:1-9",
-        "devo_title": "Chapters 25-27",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 28:1-27, 2 Chronicles 29:1-36, 2 Chronicles 30:1-27",
-        "devo_title": "Chapters 28-30",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 31:1-21, 2 Chronicles 32:1-33, 2 Chronicles 33:1-25",
-        "devo_title": "Chapters 31-33",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "1 & 2 Chronicles",
-        "devo_passages": "2 Chronicles 34:1-33, 2 Chronicles 35:1-27, 2 Chronicles 36:1-23",
-        "devo_title": "Chapters 34-36",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezra",
-        "devo_passages": "Ezra 1:1-11, Ezra 2:1-70, Ezra 3:1-13",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezra",
-        "devo_passages": "Ezra 4:1-24, Ezra 5:1-17, Ezra 6:1-22, Ezra 7:1-28",
-        "devo_title": "Chapters 4-7",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezra",
-        "devo_passages": "Ezra 8:1-36, Ezra 9:1-15, Ezra 10:1-44",
-        "devo_title": "Chapters 8-10",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 1:1-31, Isaiah 2:1-22, Isaiah 3:1-26",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 4:1-6, Isaiah 5:1-30, Isaiah 6:1-13",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 7:1-25, Isaiah 8:1-22, Isaiah 9:1-21",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 10:1-34, Isaiah 11:1-16, Isaiah 12:1-6",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 13:1-22, Isaiah 14:1-32, Isaiah 15:1-9",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 16:1-14, Isaiah 17:1-14, Isaiah 18:1-7",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 19:1-25, Isaiah 20:1-6, Isaiah 21:1-17",
-        "devo_title": "Chapters 19-21",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 22:1-25, Isaiah 23:1-18, Isaiah 24:1-23",
-        "devo_title": "Chapters 22-24",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 25:1-12, Isaiah 26:1-21, Isaiah 27:1-13",
-        "devo_title": "Chapters 25-27",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 28:1-29, Isaiah 29:1-24, Isaiah 30:1-33",
-        "devo_title": "Chapters 28-30",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 31:1-9, Isaiah 32:1-20, Isaiah 33:1-24",
-        "devo_title": "Chapters 31-33",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 34:1-17, Isaiah 35:1-10, Isaiah 36:1-22",
-        "devo_title": "Chapters 34-36",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 37:1-38, Isaiah 38:1-22, Isaiah 39:1-8",
-        "devo_title": "Chapters 37-39",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 40:1-31, Isaiah 41:1-29, Isaiah 42:1-25",
-        "devo_title": "Chapters 40-42",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 43:1-28, Isaiah 44:1-28, Isaiah 45:1-25",
-        "devo_title": "Chapters 43-45",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 46:1-13, Isaiah 47:1-15, Isaiah 48:1-22",
-        "devo_title": "Chapters 46-48",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 49:1-26, Isaiah 50:1-11, Isaiah 51:1-23",
-        "devo_title": "Chapters 49-51",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 52:1-15, Isaiah 53:1-12, Isaiah 54:1-17",
-        "devo_title": "Chapters 52-54",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 55:1-13, Isaiah 56:1-12, Isaiah 57:1-21",
-        "devo_title": "Chapters 55-57",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 58:1-14, Isaiah 59:1-21, Isaiah 60:1-22",
-        "devo_title": "Chapters 58-60",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 61:1-11, Isaiah 62:1-12, Isaiah 63:1-19",
-        "devo_title": "Chapters 61-63",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Isaiah",
-        "devo_passages": "Isaiah 64:1-12, Isaiah 65:1-25, Isaiah 66:1-24",
-        "devo_title": "Chapters 64-66",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Lamentations",
-        "devo_passages": "Lamentations 1:1-22, Lamentations 2:1-22",
-        "devo_title": "Chapters 1-2",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Lamentations",
-        "devo_passages": "Lamentations 3:1-66",
-        "devo_title": "Chapters 3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Lamentations",
-        "devo_passages": "Lamentations 4:1-22, Lamentations 5:1-22",
-        "devo_title": "Chapters 4-5",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 1:1-28, Ezekiel 2:1-10, Ezekiel 3:1-27",
-        "devo_title": "Chapters 1-3",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 4:1-17, Ezekiel 5:1-17, Ezekiel 6:1-14",
-        "devo_title": "Chapters 4-6",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 7:1-27, Ezekiel 8:1-18, Ezekiel 9:1-11",
-        "devo_title": "Chapters 7-9",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 10:1-22, Ezekiel 11:1-25, Ezekiel 12:1-28",
-        "devo_title": "Chapters 10-12",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 13:1-23, Ezekiel 14:1-23, Ezekiel 15:1-8",
-        "devo_title": "Chapters 13-15",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 16:1-63, Ezekiel 17:1-24, Ezekiel 18:1-32",
-        "devo_title": "Chapters 16-18",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 19:1-14, Ezekiel 20:1-44, Ezekiel 21:1-37",
-        "devo_title": "Chapters 19-21",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 22:1-31, Ezekiel 23:1-49, Ezekiel 24:1-27",
-        "devo_title": "Chapters 22-24",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 25:1-17, Ezekiel 26:1-21, Ezekiel 27:1-36",
-        "devo_title": "Chapters 25-27",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 28:1-26, Ezekiel 29:1-21, Ezekiel 30:1-26",
-        "devo_title": "Chapters 28-30",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 31:1-18, Ezekiel 32:1-32, Ezekiel 33:1-33",
-        "devo_title": "Chapters 31-33",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 34:1-31, Ezekiel 35:1-15, Ezekiel 36:1-38",
-        "devo_title": "Chapters 34-36",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 37:1-28, Ezekiel 38:1-23, Ezekiel 39:1-29",
-        "devo_title": "Chapters 37-39",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 40:1-49, Ezekiel 41:1-26, Ezekiel 42:1-20",
-        "devo_title": "Chapters 40-42",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 43:1-27, Ezekiel 44:1-31, Ezekiel 45:1-25",
-        "devo_title": "Chapters 43-45",
-        "devo_summary": "",
-        "img_url": ""
-    },
-    {
-        "book_title": "Ezekiel",
-        "devo_passages": "Ezekiel 46:1-24, Ezekiel 47:1-23, Ezekiel 48:1-35",
-        "devo_title": "Chapters 46-48",
-        "devo_summary": "",
-        "img_url": ""
-    }
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 1:1-22, Exodus 2:1-25, Exodus 3:1-22",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 4:1-31, Exodus 5:1-23, Exodus 6:1-30",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 7:1-25, Exodus 8:1-32, Exodus 9:1-35",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 10:1-29, Exodus 11:1-10, Exodus 12:1-22",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 13:1-25, Exodus 14:1-31, Exodus 15:1-27",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 16:1-36, Exodus 17:1-16, Exodus 18:1-27",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 19:1-25, Exodus 20:1-26, Exodus 21:1-36",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 22:1-31, Exodus 23:1-33, Exodus 24:1-18",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 25:1-40, Exodus 26:1-37, Exodus 27:1-21",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 28:1-43, Exodus 29:1-46, Exodus 30:1-38",
+		"devo_title": "Chapters 28-30",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 31:1-18, Exodus 32:1-35, Exodus 33:1-23",
+		"devo_title": "Chapters 31-33",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 34:1-35, Exodus 35:1-35, Exodus 36:1-38",
+		"devo_title": "Chapters 34-36",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Exodus",
+		"devo_passages": "Exodus 37:1-29, Exodus 38:1-31, Exodus 39:1-43, Exodus 40:1-38",
+		"devo_title": "Chapters 37-40",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 1:1-17, Leviticus 2:1-16, Leviticus 3:1-17",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 4:1-35, Leviticus 5:1-26, Leviticus 6:1-30",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 7:1-38, Leviticus 8:1-36, Leviticus 9:1-24",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 10:1-20, Leviticus 11:1-47, Leviticus 12:1-8",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 13:1-59, Leviticus 14:1-57, Leviticus 15:1-33",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 16:1-34, Leviticus 17:1-16, Leviticus 18:1-30",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 19:1-37, Leviticus 20:1-27, Leviticus 21:1-24",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 22:1-33, Leviticus 23:1-44, Leviticus 24:1-23",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Leviticus",
+		"devo_passages": "Leviticus 25:1-55, Leviticus 26:1-46, Leviticus 27:1-34",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 1:1-54, Numbers 2:1-34, Numbers 3:1-51",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 4:1-49, Numbers 5:1-31, Numbers 6:1-27",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 7:1-89, Numbers 8:1-31, Numbers 9:1-23",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 10:1-36, Numbers 11:1-35, Numbers 12:1-16",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 13:1-33, Numbers 14:1-45, Numbers 15:1-41",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 16:1-35, Numbers 17:1-28, Numbers 18:1-32",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 19:1-22, Numbers 20:1-29, Numbers 21:1-35",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 22:1-41, Numbers 23:1-30, Numbers 24:1-25",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 25:1-18, Numbers 26:1-65, Numbers 27:1-23",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 28:1-31, Numbers 29:1-39, Numbers 30:1-17",
+		"devo_title": "Chapters 28-30",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 31:1-54, Numbers 32:1-42, Numbers 33:1-56",
+		"devo_title": "Chapters 31-33",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Numbers",
+		"devo_passages": "Numbers 34:1-29, Numbers 35:1-34, Numbers 36:1-13",
+		"devo_title": "Chapters 34-36",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 1:1-46, Deuteronomy 2:1-37, Deuteronomy 3:1-29",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 4:1-49, Deuteronomy 5:1-33, Deuteronomy 6:1-25",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 7:1-26, Deuteronomy 8:1-20, Deuteronomy 9:1-29",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 10:1-22, Deuteronomy 11:1-32, Deuteronomy 12:1-31",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 13:1-19, Deuteronomy 14:1-29, Deuteronomy 15:1-23",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 16:1-22, Deuteronomy 17:1-20, Deuteronomy 18:1-22",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 19:1-21, Deuteronomy 20:1-20, Deuteronomy 21:1-23",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 22:1-29, Deuteronomy 23:1-26, Deuteronomy 24:1-22",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 25:1-19, Deuteronomy 26:1-19, Deuteronomy 27:1-26",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 28:1-69, Deuteronomy 29:1-28, Deuteronomy 30:1-20",
+		"devo_title": "Chapters 28-30",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Deuteronomy",
+		"devo_passages": "Deuteronomy 31:1-30, Deuteronomy 32:1-52, Deuteronomy 33:1-29, Deuteronomy 34:1-12",
+		"devo_title": "Chapters 31-34",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 1:1-54, 1 Chronicles 2:1-55, 1 Chronicles 3:1-24",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 4:1-43, 1 Chronicles 5:1-26, 1 Chronicles 6:1-81",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 7:1-40, 1 Chronicles 8:1-40, 1 Chronicles 9:1-44",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 10:1-14, 1 Chronicles 11:1-47, 1 Chronicles 12:1-40",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 13:1-14, 1 Chronicles 14:1-17, 1 Chronicles 15:1-29",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 16:1-43, 1 Chronicles 17:1-27, 1 Chronicles 18:1-17",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 19:1-19, 1 Chronicles 20:1-8, 1 Chronicles 21:1-30, 1 Chronicles 22:1-30",
+		"devo_title": "Chapters 19-22",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 23:1-32, 1 Chronicles 24:1-31, 1 Chronicles 25:1-31",
+		"devo_title": "Chapters 23-25",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "1 Chronicles 26:1-32, 1 Chronicles 27:1-34, 1 Chronicles 28:1-21, 1 Chronicles 29:1-30",
+		"devo_title": "Chapters 26-29",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 1:1-17, 2 Chronicles 2:1-18, 2 Chronicles 3:1-17",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 4:1-22, 2 Chronicles 5:1-14, 2 Chronicles 6:1-42",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 7:1-22, 2 Chronicles 8:1-18, 2 Chronicles 9:1-31",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 10:1-19, 2 Chronicles 11:1-23, 2 Chronicles 12:1-16",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 13:1-22, 2 Chronicles 14:1-15, 2 Chronicles 15:1-19",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 16:1-14, 2 Chronicles 17:1-19, 2 Chronicles 18:1-34",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 19:1-11, 2 Chronicles 20:1-37, 2 Chronicles 21:1-20",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 22:1-12, 2 Chronicles 23:1-21, 2 Chronicles 24:1-27",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 25:1-28, 2 Chronicles 26:1-23, 2 Chronicles 27:1-9",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 28:1-27, 2 Chronicles 29:1-36, 2 Chronicles 30:1-27",
+		"devo_title": "Chapters 28-30",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 31:1-21, 2 Chronicles 32:1-33, 2 Chronicles 33:1-25",
+		"devo_title": "Chapters 31-33",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "1 & 2 Chronicles",
+		"devo_passages": "2 Chronicles 34:1-33, 2 Chronicles 35:1-27, 2 Chronicles 36:1-23",
+		"devo_title": "Chapters 34-36",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezra",
+		"devo_passages": "Ezra 1:1-11, Ezra 2:1-70, Ezra 3:1-13",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezra",
+		"devo_passages": "Ezra 4:1-24, Ezra 5:1-17, Ezra 6:1-22, Ezra 7:1-28",
+		"devo_title": "Chapters 4-7",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezra",
+		"devo_passages": "Ezra 8:1-36, Ezra 9:1-15, Ezra 10:1-44",
+		"devo_title": "Chapters 8-10",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 1:1-31, Isaiah 2:1-22, Isaiah 3:1-26",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 4:1-6, Isaiah 5:1-30, Isaiah 6:1-13",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 7:1-25, Isaiah 8:1-22, Isaiah 9:1-21",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 10:1-34, Isaiah 11:1-16, Isaiah 12:1-6",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 13:1-22, Isaiah 14:1-32, Isaiah 15:1-9",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 16:1-14, Isaiah 17:1-14, Isaiah 18:1-7",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 19:1-25, Isaiah 20:1-6, Isaiah 21:1-17",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 22:1-25, Isaiah 23:1-18, Isaiah 24:1-23",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 25:1-12, Isaiah 26:1-21, Isaiah 27:1-13",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 28:1-29, Isaiah 29:1-24, Isaiah 30:1-33",
+		"devo_title": "Chapters 28-30",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 31:1-9, Isaiah 32:1-20, Isaiah 33:1-24",
+		"devo_title": "Chapters 31-33",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 34:1-17, Isaiah 35:1-10, Isaiah 36:1-22",
+		"devo_title": "Chapters 34-36",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 37:1-38, Isaiah 38:1-22, Isaiah 39:1-8",
+		"devo_title": "Chapters 37-39",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 40:1-31, Isaiah 41:1-29, Isaiah 42:1-25",
+		"devo_title": "Chapters 40-42",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 43:1-28, Isaiah 44:1-28, Isaiah 45:1-25",
+		"devo_title": "Chapters 43-45",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 46:1-13, Isaiah 47:1-15, Isaiah 48:1-22",
+		"devo_title": "Chapters 46-48",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 49:1-26, Isaiah 50:1-11, Isaiah 51:1-23",
+		"devo_title": "Chapters 49-51",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 52:1-15, Isaiah 53:1-12, Isaiah 54:1-17",
+		"devo_title": "Chapters 52-54",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 55:1-13, Isaiah 56:1-12, Isaiah 57:1-21",
+		"devo_title": "Chapters 55-57",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 58:1-14, Isaiah 59:1-21, Isaiah 60:1-22",
+		"devo_title": "Chapters 58-60",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 61:1-11, Isaiah 62:1-12, Isaiah 63:1-19",
+		"devo_title": "Chapters 61-63",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Isaiah",
+		"devo_passages": "Isaiah 64:1-12, Isaiah 65:1-25, Isaiah 66:1-24",
+		"devo_title": "Chapters 64-66",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Lamentations",
+		"devo_passages": "Lamentations 1:1-22, Lamentations 2:1-22",
+		"devo_title": "Chapters 1-2",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Lamentations",
+		"devo_passages": "Lamentations 3:1-66",
+		"devo_title": "Chapters 3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Lamentations",
+		"devo_passages": "Lamentations 4:1-22, Lamentations 5:1-22",
+		"devo_title": "Chapters 4-5",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 1:1-28, Ezekiel 2:1-10, Ezekiel 3:1-27",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 4:1-17, Ezekiel 5:1-17, Ezekiel 6:1-14",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 7:1-27, Ezekiel 8:1-18, Ezekiel 9:1-11",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 10:1-22, Ezekiel 11:1-25, Ezekiel 12:1-28",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 13:1-23, Ezekiel 14:1-23, Ezekiel 15:1-8",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 16:1-63, Ezekiel 17:1-24, Ezekiel 18:1-32",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 19:1-14, Ezekiel 20:1-44, Ezekiel 21:1-37",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 22:1-31, Ezekiel 23:1-49, Ezekiel 24:1-27",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 25:1-17, Ezekiel 26:1-21, Ezekiel 27:1-36",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 28:1-26, Ezekiel 29:1-21, Ezekiel 30:1-26",
+		"devo_title": "Chapters 28-30",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 31:1-18, Ezekiel 32:1-32, Ezekiel 33:1-33",
+		"devo_title": "Chapters 31-33",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 34:1-31, Ezekiel 35:1-15, Ezekiel 36:1-38",
+		"devo_title": "Chapters 34-36",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 37:1-28, Ezekiel 38:1-23, Ezekiel 39:1-29",
+		"devo_title": "Chapters 37-39",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 40:1-49, Ezekiel 41:1-26, Ezekiel 42:1-20",
+		"devo_title": "Chapters 40-42",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 43:1-27, Ezekiel 44:1-31, Ezekiel 45:1-25",
+		"devo_title": "Chapters 43-45",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Ezekiel",
+		"devo_passages": "Ezekiel 46:1-24, Ezekiel 47:1-23, Ezekiel 48:1-35",
+		"devo_title": "Chapters 46-48",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 1:1-19, Jeremiah 2:1-37, Jeremiah 3:1-25",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 4:1-31, Jeremiah 5:1-31, Jeremiah 6:1-30",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 7:1-34, Jeremiah 8:1-23, Jeremiah 9:1-25",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 10:1-25, Jeremiah 11:1-23, Jeremiah 12:1-17",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 13:1-27, Jeremiah 14:1-22, Jeremiah 15:1-21",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 16:1-21, Jeremiah 17:1-27, Jeremiah 18:1-23",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 19:1-15, Jeremiah 20:1-18, Jeremiah 21:1-14",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 22:1-30, Jeremiah 23:1-40, Jeremiah 24:1-10",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 25:1-38, Jeremiah 26:1-24, Jeremiah 27:1-22",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 28:1-17, Jeremiah 29:1-32, Jeremiah 30:1-24",
+		"devo_title": "Chapters 28-30",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 31:1-40, Jeremiah 32:1-44, Jeremiah 33:1-26",
+		"devo_title": "Chapters 31-33",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 34:1-22, Jeremiah 35:1-19, Jeremiah 36:1-32",
+		"devo_title": "Chapters 34-36",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 37:1-21, Jeremiah 38:1-28, Jeremiah 39:1-18",
+		"devo_title": "Chapters 37-39",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 40:1-16, Jeremiah 41:1-18, Jeremiah 42:1-22",
+		"devo_title": "Chapters 40-42",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 43:1-13, Jeremiah 44:1-30, Jeremiah 45:1-5",
+		"devo_title": "Chapters 43-45",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 46:1-28, Jeremiah 47:1-7, Jeremiah 48:1-47",
+		"devo_title": "Chapters 46-48",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Jeremiah",
+		"devo_passages": "Jeremiah 49:1-39, Jeremiah 50:1-46, Jeremiah 51:1-64, Jeremiah 52:1-34",
+		"devo_title": "Chapters 49-52",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 1:1-33, Proverbs 2:1-22, Proverbs 3:1-35",
+		"devo_title": "Chapters 1-3",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 4:1-27, Proverbs 5:1-23, Proverbs 6:1-35",
+		"devo_title": "Chapters 4-6",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 7:1-27, Proverbs 8:1-36, Proverbs 9:1-18",
+		"devo_title": "Chapters 7-9",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 10:1-32, Proverbs 11:1-31, Proverbs 12:1-28",
+		"devo_title": "Chapters 10-12",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 13:1-25, Proverbs 14:1-35, Proverbs 15:1-33",
+		"devo_title": "Chapters 13-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 16:1-33, Proverbs 17:1-28, Proverbs 18:1-24",
+		"devo_title": "Chapters 16-18",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 19:1-29, Proverbs 20:1-30, Proverbs 21:1-31",
+		"devo_title": "Chapters 19-21",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 22:1-29, Proverbs 23:1-35, Proverbs 24:1-34",
+		"devo_title": "Chapters 22-24",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 25:1-28, Proverbs 26:1-28, Proverbs 27:1-27",
+		"devo_title": "Chapters 25-27",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Proverbs",
+		"devo_passages": "Proverbs 28:1-28, Proverbs 29:1-27, Proverbs 30:1-33, Proverbs 31:1-31",
+		"devo_title": "Chapters 28-31",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 1:1-6, Psalm 2:1-12, Psalm 3:1-9, Psalm 4:1-9, Psalm 5:1-13, Psalm 6:1-11, Psalm 7:1-18, Psalm 8:1-10",
+		"devo_title": "Chapters 1-8",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 9:1-21, Psalm 10:1-18, Psalm 11:1-7, Psalm 12:1-9, Psalm 13:1-6, Psalm 14:1-7, Psalm 15:1-5",
+		"devo_title": "Chapters 9-15",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 16:1-11, Psalm 17:1-15, Psalm 18:1-51, Psalm 19:1-15",
+		"devo_title": "Chapters 16-19",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 20:1-10, Psalm 21:1-14, Psalm 22:1-32, Psalm 23:1-6, Psalm 24:1-10, Psalm 25:1-22",
+		"devo_title": "Chapters 20-25",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 26:1-11, Psalm 27:1-14, Psalm 28:1-9, Psalm 29:1-11, Psalm 30:1-13, Psalm 31:1-25, Psalm 32:1-11",
+		"devo_title": "Chapters 26-32",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 33:1-22, Psalm 34:1-23, Psalm 35:1-28, Psalm 36:1-13",
+		"devo_title": "Chapters 33-36",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 37:1-40, Psalm 38:1-23, Psalm 39:1-14, Psalm 40:1-18, Psalm 41:1-14",
+		"devo_title": "Chapters 38-41",
+		"devo_summary": "",
+		"img_url": ""
+	},
+
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 42:1-12, Psalm 43:1-5, Psalm 44:1-27, Psalm 45:1-18, Psalm 46:1-12",
+		"devo_title": "Chapters 42-46",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 47:1-10, Psalm 48:1-15, Psalm 49:1-21, Psalm 50:1-23, Psalm 51:1-21",
+		"devo_title": "Chapters 47-51",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 52:1-11, Psalm 53:1-7, Psalm 54:1-9, Psalm 55:1-24, Psalm 56:1-14, Psalm 57:1-12",
+		"devo_title": "Chapters 52-57",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 58:1-12, Psalm 59:1-18, Psalm 60:1-14, Psalm 61:1-9, Psalm 62:1-13, Psalm 63:1-12",
+		"devo_title": "Chapters 58-63",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 64:1-11, Psalm 65:1-14, Psalm 66:1-20, Psalm 67:1-8, Psalm 68:1-36",
+		"devo_title": "Chapters 64-68",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 69:1-37, Psalm 70:1-6, Psalm 71:1-24, Psalm 72:1-20",
+		"devo_title": "Chapters 69-72",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 73:1-28, Psalm 74:1-23, Psalm 75:1-11, Psalm 76:1-13, Psalm 77:1-21",
+		"devo_title": "Chapters 73-77",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 78:1-72",
+		"devo_title": "Chapters 78",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 79:1-13, Psalm 80:1-20, Psalm 81:1-17, Psalm 82:1-8",
+		"devo_title": "Chapters 79-82",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 83:1-19, Psalm 84:1-13, Psalm 85:1-14, Psalm 86:1-17, Psalm 87:1-7",
+		"devo_title": "Chapters 83-87",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 88:1-19, Psalm 89:1-53",
+		"devo_title": "Chapters 88-89",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 90:1-17, Psalm 91:1-16, Psalm 92:1-16, Psalm 93:1-5, Psalm 94:1-23",
+		"devo_title": "Chapters 90-94",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 95:1-11, Psalm 96:1-13, Psalm 97:1-12, Psalm 98:1-9, Psalm 99:1-9, Psalm 100:1-5, Psalm 101:1-8",
+		"devo_title": "Chapters 95-101",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 102:1-29, Psalm 103:1-22, Psalm 104:1-35",
+		"devo_title": "Chapters 102-104",
+		"devo_summary": "",
+		"img_url": ""
+	},
+
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 105:1-45, Psalm 106:1-48",
+		"devo_title": "Chapters 105-106",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 107:1-43, Psalm 108:1-14",
+		"devo_title": "Chapters 107-108",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 109:1-31, Psalm 110:1-7, Psalm 111:1-10, Psalm 112:1-10, Psalm 113:1-9",
+		"devo_title": "Chapters 109-113",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 114:1-8, Psalm 115:1-18, Psalm 116:1-19, Psalm 117:2, Psalm 118:1-29",
+		"devo_title": "Chapters 114-118",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 119:1-176",
+		"devo_title": "Chapters 119",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 120:1-7, Psalm 121:1-8, Psalm 122:1-9, Psalm 123:1-4, Psalm 124:1-8, Psalm 125:1-5, Psalm 126:1-6, Psalm 127:1-5, Psalm 128:1-6, Psalm 129:1-8, Psalm 130:1-8, Psalm 131:1-3",
+		"devo_title": "Chapters 120-131",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 132:1-18, Psalm 133:1-3, Psalm 134:1-3, Psalm 135:1-21, Psalm 136:1-26",
+		"devo_title": "Chapters 132-136",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 137:1-9, Psalm 138:1-8, Psalm 139:1-24, Psalm 140:1-14",
+		"devo_title": "Chapters 137-140",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 141:1-10, Psalm 142:1-8, Psalm 143:1-12, Psalm 144:1-15, Psalm 145:1-21",
+		"devo_title": "Chapters 141-145",
+		"devo_summary": "",
+		"img_url": ""
+	},
+	{
+		"book_title": "Psalm",
+		"devo_passages": "Psalm 146:1-10, Psalm 147:1-20, Psalm 148:1-14, Psalm 149:1-9, Psalm 150:1-6",
+		"devo_title": "Chapters 146-150",
+		"devo_summary": "",
+		"img_url": ""
+	}
 ]

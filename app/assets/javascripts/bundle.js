@@ -4127,9 +4127,9 @@ var bibleBooksForIndexing = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deute
 
 var NTbooks = ['Matthew', 'Mark', 'Luke', 'John', 'Acts of the Apostles', 'Romans', '1 & 2 Corinthians', 'Galatians', 'Ephesians', 'Philippians', 'Colossians', '1 & 2 Thessalonians', '1 & 2 Timothy and Titus', 'Philemon & Hebrews', 'James', '1 & 2 Peter', '1, 2, 3 John', 'Jude & Revelation']; // category_list_OT.jsx
 
-var OTbooks = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', '1 & 2 Samuel', '1 & 2 Kings', '1 & 2 Chronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalms', 'Proverbs', 'Ecclesiastes', 'Song of Songs', 'Isaiah', 'Jeremiah', 'Lamentations', 'Ezekiel', 'Daniel', 'Hosea', 'Joel, Amos, Obadiah, Jonah, & Micah', 'Nahum, Habakkuk, Zephaniah, & Haggai', 'Zechariah & Malachi']; // category_list_Other.jsx
+var OTbooks = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Joshua', 'Judges', 'Ruth', '1 & 2 Samuel', '1 & 2 Kings', '1 & 2 Chronicles', 'Ezra', 'Nehemiah', 'Esther', 'Job', 'Psalm', 'Proverbs', 'Ecclesiastes', 'Song of Songs', 'Isaiah', 'Jeremiah', 'Lamentations', 'Ezekiel', 'Daniel', 'Hosea', 'Joel, Amos, Obadiah, Jonah, & Micah', 'Nahum, Habakkuk, Zephaniah, & Haggai', 'Zechariah & Malachi']; // category_list_Other.jsx
 
-var themeBooks = ['This Is the New Testament', 'This Is the Old Testament', 'The Kingdom of God', 'The Sermon on the Mount', 'This Is the Gospel', 'Mourning and Dancing', 'Names of God', 'In Spirit & in Truth: A Study of Biblical Worship', 'The Resurrected Life', 'The Risen Christ', 'Jesus, Keep Me Near The Cross', 'The Beatitudes', 'Psalms for Prayer', 'Attributes of God', 'Psalms of Rest', 'Because He Lives', 'The Miracles of Jesus', 'Songs for the Road: The Psalms of Ascent', 'Give Thanks', 'Making Room: A Study of Biblical Hospitality', 'I Am: Statements of Our Savior', 'Worthy of Praise', 'Holding Tight to Permanent', 'The Fruit of the Spirit', 'The Parables of Jesus', 'Go Tell It on the Mountain', 'Psalms of Gratitude', 'Promises of God', 'Psalm 119', 'The Presence of God'];
+var themeBooks = ['This Is the New Testament', 'This Is the Old Testament', 'The Kingdom of God', 'The Sermon on the Mount', 'This Is the Gospel', 'Mourning and Dancing', 'Names of God', 'In Spirit & in Truth: A Study of Biblical Worship', 'The Resurrected Life', 'The Risen Christ', 'Jesus, Keep Me Near The Cross', 'The Beatitudes', 'Attributes of God', 'Because He Lives', 'The Miracles of Jesus', 'Give Thanks', 'Making Room: A Study of Biblical Hospitality', 'I Am: Statements of Our Savior', 'Worthy of Praise', 'Holding Tight to Permanent', 'The Fruit of the Spirit', 'The Parables of Jesus', 'Go Tell It on the Mountain', 'Promises of God', 'The Presence of God'];
 
 /***/ }),
 
@@ -4308,13 +4308,12 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.currentUser) {
     var _window$currentUser, _window$currentUser2;
 
-    var preloadedState = {
+    store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])({
       users: _defineProperty({}, (_window$currentUser = window.currentUser) === null || _window$currentUser === void 0 ? void 0 : _window$currentUser.id, window.currentUser),
       session: {
         id: (_window$currentUser2 = window.currentUser) === null || _window$currentUser2 === void 0 ? void 0 : _window$currentUser2.id
       }
-    };
-    store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])(preloadedState);
+    });
     delete window.currentUser;
   } else {
     store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])();
