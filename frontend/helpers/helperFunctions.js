@@ -61,7 +61,7 @@ export const sortDevoBook = (devoBook) => {
 		},
 	};
 
-	if (shouldBeReversed[gender][book]) {
+	if (!!shouldBeReversed[gender][book]) {
 		return [...devoBook].reverse();
 	} else {
 		return devoBook;
