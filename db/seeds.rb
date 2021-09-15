@@ -41,15 +41,17 @@ he_data_2 = JSON.parse(File.read("#{Rails.root}/dist/he_v2.json"))
 he_data_3 = JSON.parse(File.read("#{Rails.root}/dist/he_v3.json"))
 he_data_4 = JSON.parse(File.read("#{Rails.root}/dist/no_summary.json"))
 he_data_5 = JSON.parse(File.read("#{Rails.root}/dist/he_v5.json"))
+he_data_6 = JSON.parse(File.read("#{Rails.root}/dist/he_v6.json"))
 she_data_1 = JSON.parse(File.read("#{Rails.root}/dist/she_v1.json"))
 she_data_2 = JSON.parse(File.read("#{Rails.root}/dist/she_v2.json"))
 she_data_3 = JSON.parse(File.read("#{Rails.root}/dist/she_v3.json"))
 she_data_4 = JSON.parse(File.read("#{Rails.root}/dist/no_summary.json"))
 she_data_5 = JSON.parse(File.read("#{Rails.root}/dist/she_v5.json"))
+she_data_6 = JSON.parse(File.read("#{Rails.root}/dist/she_v6.json"))
 
 hash = {
-    "HE": [he_data_1, he_data_2, he_data_3, he_data_4.reverse(), he_data_5],
-    "SHE": [she_data_1, she_data_2, she_data_3, she_data_4, she_data_5],
+    "HE": [he_data_1, he_data_2, he_data_3, he_data_4.reverse(), he_data_5, he_data_6],
+    "SHE": [she_data_1, she_data_2, she_data_3, she_data_4, she_data_5, she_data_6],
 }
 
 # hash = {

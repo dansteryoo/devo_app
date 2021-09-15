@@ -4228,14 +4228,18 @@ var sortDevoBook = function sortDevoBook(devoBook) {
   var _devoBook$ = devoBook[0],
       gender = _devoBook$.gender,
       book = _devoBook$.book;
-  var isNotReversed = {
-    Leviticus: true
+  var shouldBeReversed = {
+    HE: {
+      Job: true
+    },
+    SHE: {
+      Judges: true,
+      Job: true
+    }
   };
 
-  if (gender === 'HE' && !isNotReversed[book] || gender === 'SHE' && book === 'Judges' || book === 'Job') {
-    var reversedDevoBooks = _toConsumableArray(devoBook).reverse();
-
-    return reversedDevoBooks;
+  if (shouldBeReversed[gender][book]) {
+    return _toConsumableArray(devoBook).reverse();
   } else {
     return devoBook;
   }
