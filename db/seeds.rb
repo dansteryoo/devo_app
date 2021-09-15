@@ -50,7 +50,7 @@ she_data_5 = JSON.parse(File.read("#{Rails.root}/dist/she_v5.json"))
 she_data_6 = JSON.parse(File.read("#{Rails.root}/dist/she_v6.json"))
 
 hash = {
-    "HE": [he_data_1, he_data_2, he_data_3, he_data_4.reverse(), he_data_5, he_data_6],
+    "HE": [he_data_1.reverse(), he_data_2.reverse(), he_data_3.reverse(), he_data_4, he_data_5.reverse(), he_data_6.reverse()],
     "SHE": [she_data_1, she_data_2, she_data_3, she_data_4, she_data_5, she_data_6],
 }
 

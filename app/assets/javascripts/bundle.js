@@ -4238,7 +4238,7 @@ var sortDevoBook = function sortDevoBook(devoBook) {
     }
   };
 
-  if (shouldBeReversed[gender][book]) {
+  if (!!shouldBeReversed[gender][book]) {
     return _toConsumableArray(devoBook).reverse();
   } else {
     return devoBook;
