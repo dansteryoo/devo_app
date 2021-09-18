@@ -23,7 +23,7 @@ import {
 	NTbooks, 
 } from '../../helpers/bookTitles';
 
-const ALL_BOOK_TITLES = [...OTbooks, ...NTbooks];
+const ALL_BIBLE_BOOK_TITLES = [...OTbooks, ...NTbooks];
 const BOOK_TITLE_REF = {
 	prev: null,
 	next: null,
@@ -348,20 +348,20 @@ const MainBody = ({
 
 	const toggleMainBody = (type) => {
 		const { currentMainBodyDevoIndex } = findMainBodyIndex();
-		const currentBookTitleIndex = ALL_BOOK_TITLES.indexOf(book);
+		const currentBookTitleIndex = ALL_BIBLE_BOOK_TITLES.indexOf(book);
 
 		const previousBookTitle =
 			currentBookTitleIndex === 0
-				? ALL_BOOK_TITLES[ALL_BOOK_TITLES.length - 1]
-				: ALL_BOOK_TITLES[currentBookTitleIndex - 1];
+				? ALL_BIBLE_BOOK_TITLES[ALL_BIBLE_BOOK_TITLES.length - 1]
+				: ALL_BIBLE_BOOK_TITLES[currentBookTitleIndex - 1];
 
 		const nextBookTitle =
-			currentBookTitleIndex === ALL_BOOK_TITLES.length - 1
-				? ALL_BOOK_TITLES[0]
-				: ALL_BOOK_TITLES[currentBookTitleIndex + 1];
+			currentBookTitleIndex === ALL_BIBLE_BOOK_TITLES.length - 1
+				? ALL_BIBLE_BOOK_TITLES[0]
+				: ALL_BIBLE_BOOK_TITLES[currentBookTitleIndex + 1];
 		
 		const fetchPayload = (bookTitle) => {
-			const fetchBookPayload = createTitlePayload(ALL_BOOK_TITLES, {
+			const fetchBookPayload = createTitlePayload(ALL_BIBLE_BOOK_TITLES, {
 				gender: gender.toUpperCase(),
 				book: bookTitle.toLowerCase(),
 			});
@@ -444,6 +444,11 @@ const MainBody = ({
 	 ******************************/
 
 	if ((mainBodyIsNull && !devoBookIsEmpty) || !id) return <></>;
+	const isBibleBook = ALL_BIBLE_BOOK_TITLES.includes(book);
+	const iconsClassName = isBibleBook
+		? 'devo-main-title-icons-with-audio'
+		: 'devo-main-title-icons-no-audio';
+	
 	return (
 		<div className='middle-container'>
 			<div className='devo-main-title-wrapper'>
@@ -451,23 +456,25 @@ const MainBody = ({
 					<span className='devo-main-day'>Day {renderDay}:</span>
 					<span>{title}</span>
 				</div>
-				<div className='devo-main-title-icons'>
+				<div className={iconsClassName}>
 					<i
 						id='previous-arrow'
 						className='fas fa-caret-left icons'
 						onClick={() => toggleMainBody('previous')}
-					></i>
+					/>
 					<i
 						id='next-arrow'
 						className='fas fa-caret-right icons'
 						onClick={() => toggleMainBody('next')}
-					></i>
-					<i
-						id='max-mclean-audio'
-						className='fa fa-volume-up icons'
-						onClick={() => toggleAudio()}
-						aria-hidden='true'
-					></i>
+					/>
+					{isBibleBook && (
+						<i
+							id='max-mclean-audio'
+							className='fa fa-volume-up icons'
+							onClick={() => toggleAudio()}
+							aria-hidden='true'
+						/>
+					)}
 					<i
 						id='bookmark'
 						className={
@@ -475,7 +482,7 @@ const MainBody = ({
 						}
 						onClick={() => toggleBookmark()}
 						aria-hidden='true'
-					></i>
+					/>
 				</div>
 			</div>
 			<div className='devo-main-container'>

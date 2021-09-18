@@ -1652,7 +1652,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-var ALL_BOOK_TITLES = [].concat(_toConsumableArray(_helpers_bookTitles__WEBPACK_IMPORTED_MODULE_9__["OTbooks"]), _toConsumableArray(_helpers_bookTitles__WEBPACK_IMPORTED_MODULE_9__["NTbooks"]));
+var ALL_BIBLE_BOOK_TITLES = [].concat(_toConsumableArray(_helpers_bookTitles__WEBPACK_IMPORTED_MODULE_9__["OTbooks"]), _toConsumableArray(_helpers_bookTitles__WEBPACK_IMPORTED_MODULE_9__["NTbooks"]));
 var BOOK_TITLE_REF = {
   prev: null,
   next: null
@@ -2023,12 +2023,12 @@ var MainBody = function MainBody(_ref) {
     var _findMainBodyIndex2 = findMainBodyIndex(),
         currentMainBodyDevoIndex = _findMainBodyIndex2.currentMainBodyDevoIndex;
 
-    var currentBookTitleIndex = ALL_BOOK_TITLES.indexOf(book);
-    var previousBookTitle = currentBookTitleIndex === 0 ? ALL_BOOK_TITLES[ALL_BOOK_TITLES.length - 1] : ALL_BOOK_TITLES[currentBookTitleIndex - 1];
-    var nextBookTitle = currentBookTitleIndex === ALL_BOOK_TITLES.length - 1 ? ALL_BOOK_TITLES[0] : ALL_BOOK_TITLES[currentBookTitleIndex + 1];
+    var currentBookTitleIndex = ALL_BIBLE_BOOK_TITLES.indexOf(book);
+    var previousBookTitle = currentBookTitleIndex === 0 ? ALL_BIBLE_BOOK_TITLES[ALL_BIBLE_BOOK_TITLES.length - 1] : ALL_BIBLE_BOOK_TITLES[currentBookTitleIndex - 1];
+    var nextBookTitle = currentBookTitleIndex === ALL_BIBLE_BOOK_TITLES.length - 1 ? ALL_BIBLE_BOOK_TITLES[0] : ALL_BIBLE_BOOK_TITLES[currentBookTitleIndex + 1];
 
     var fetchPayload = function fetchPayload(bookTitle) {
-      var fetchBookPayload = Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_8__["createTitlePayload"])(ALL_BOOK_TITLES, {
+      var fetchBookPayload = Object(_helpers_helperFunctions__WEBPACK_IMPORTED_MODULE_8__["createTitlePayload"])(ALL_BIBLE_BOOK_TITLES, {
         gender: gender.toUpperCase(),
         book: bookTitle.toLowerCase()
       });
@@ -2113,6 +2113,8 @@ var MainBody = function MainBody(_ref) {
 
 
   if (mainBodyIsNull && !devoBookIsEmpty || !id) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
+  var isBibleBook = ALL_BIBLE_BOOK_TITLES.includes(book);
+  var iconsClassName = isBibleBook ? 'devo-main-title-icons-with-audio' : 'devo-main-title-icons-no-audio';
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "middle-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2122,7 +2124,7 @@ var MainBody = function MainBody(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "devo-main-day"
   }, "Day ", renderDay, ":"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "devo-main-title-icons"
+    className: iconsClassName
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     id: "previous-arrow",
     className: "fas fa-caret-left icons",
@@ -2135,7 +2137,7 @@ var MainBody = function MainBody(_ref) {
     onClick: function onClick() {
       return toggleMainBody('next');
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+  }), isBibleBook && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     id: "max-mclean-audio",
     className: "fa fa-volume-up icons",
     onClick: function onClick() {
